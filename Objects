@@ -74,3 +74,17 @@ ResourceQuota (core/v1)
 Custom Resources (CRDs)
 
 CustomResourceDefinition (CRD) (apiextensions.k8s.io/v1)
+
+
+
+Key Components of RBAC:
+Role and ClusterRole
+
+A Role defines a set of permissions within a specific namespace.
+A ClusterRole defines permissions across the entire cluster.
+Roles and ClusterRoles specify what actions (e.g., get, list, create, delete) can be performed on specific Kubernetes resources (e.g., Pods, Services).
+RoleBinding and ClusterRoleBinding
+
+A RoleBinding associates a Role with a subject (user, group, or service account) within a specific namespace.
+A ClusterRoleBinding associates a ClusterRole with a subject, and it applies cluster-wide.
+
