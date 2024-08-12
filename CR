@@ -1,0 +1,13 @@
+https://chatgpt.com/share/9e7ba30f-9893-42f9-8f7b-bf4946899b9c
+
+Custom resources are extensions of the Kubernetes API.
+Once a custom resource is installed, users can create and access its objects using kubectl, just as they do for built-in resources like Pods.
+
+Adding custom resources
+Kubernetes provides two ways to add custom resources to your cluster:
+
+1. CRDs are simple and can be created without any programming.
+2. API Aggregation requires programming, but allows more control over API behaviors like how data is stored and conversion between API versions.
+CRDs allow users to create new types of resources without adding another API server. You do not need to understand API Aggregation to use CRDs.
+
+To fully manage the lifecycle of these custom resources, you might want to create a custom controller or operator.
